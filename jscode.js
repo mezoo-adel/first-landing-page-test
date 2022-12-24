@@ -1,7 +1,8 @@
 
 // Example starter JavaScript for disabling form submissions if there are invalid fields
 window.addEventListener("load", function () {
-      $("#exampleModal").modal('show');
+    // start dialoge on load
+    //   $("#exampleModal").modal('show');
     (function () {
         // Fetch all the forms we want to apply custom Bootstrap validation styles to
         var forms = document.querySelectorAll('.needs-validation')
@@ -19,7 +20,7 @@ window.addEventListener("load", function () {
                 }, false)
             })
     })(); /**validation, ()required**/
-    // start dialoge on load
+    // fill form with dialoge inputs
     let dismissDialoge = document.querySelector("div[class=modal-footer] button:nth-child(2)");
     dismissDialoge.onclick = function () {
         document.querySelector("#validationCustom01").value = document.querySelector("#name-text").value;
